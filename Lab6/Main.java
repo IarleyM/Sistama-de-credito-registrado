@@ -17,7 +17,7 @@ public class Main {
 		
 			System.out.println("---Cadastro de clientes---");
 			
-			id = random.nextLong();
+			id = random.nextLong(9999) + 1000;
 			
 			System.out.print("Nome completo: ");
 			nome = sc.nextLine();
@@ -29,10 +29,6 @@ public class Main {
 			cpf = sc.next();
 			sc.close();
 			
-			l.adicionaCliente(id, nome, idade, cpf);
-			
-			
-			
-			
+			l.adicionaCliente(id, nome, idade, cpf);		
 	}
 }
